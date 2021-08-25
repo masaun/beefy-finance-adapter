@@ -1,8 +1,12 @@
 pragma solidity ^0.5.0;
 
-import "@openzeppelin/contracts/math/SafeMath.sol";
-import "@openzeppelin/contracts/token/ERC20/SafeERC20.sol";
-import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "../openzeppelin-solidity/v2.5.1/contracts/math/SafeMath.sol";
+import "../openzeppelin-solidity/v2.5.1/contracts/token/ERC20/SafeERC20.sol";
+import "../openzeppelin-solidity/v2.5.1/contracts/token/ERC20/IERC20.sol";
+
+// import "@openzeppelin/contracts/math/SafeMath.sol";
+// import "@openzeppelin/contracts/token/ERC20/SafeERC20.sol";
+// import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 contract LPTokenWrapper {
     using SafeMath for uint256;

@@ -1,6 +1,8 @@
 pragma solidity ^0.5.0;
 
-import "@openzeppelin/contracts/token/ERC20/SafeERC20.sol";
+import "../openzeppelin-solidity/v2.5.1/contracts/token/ERC20/SafeERC20.sol";
+
+//import "@openzeppelin/contracts/token/ERC20/SafeERC20.sol";
 
 /**
  * @dev A token holder contract that will allow a beneficiary to extract the

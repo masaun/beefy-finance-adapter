@@ -1,7 +1,8 @@
 pragma solidity ^0.5.0;
 
-//import "@openzeppelin/contracts/access/Ownable.sol";
-import "@openzeppelin/contracts/ownership/Ownable.sol";
+import "../openzeppelin-solidity/v2.5.1/contracts/ownership/Ownable.sol";
+
+//import "@openzeppelin/contracts/ownership/Ownable.sol";
 
 contract IRewardDistributionRecipient is Ownable {
     address rewardDistribution;

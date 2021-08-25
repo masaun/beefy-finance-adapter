@@ -1,10 +1,16 @@
 pragma solidity ^0.5.16;
 
-import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-import "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol";
-import "@openzeppelin/contracts/token/ERC20/SafeERC20.sol";
-import "@openzeppelin/contracts/utils/Address.sol";
-import "@openzeppelin/contracts/math/SafeMath.sol";
+import "../openzeppelin-solidity/v2.5.1/contracts/token/ERC20/ERC20.sol";
+import "../openzeppelin-solidity/v2.5.1/contracts/token/ERC20/ERC20Detailed.sol";
+import "../openzeppelin-solidity/v2.5.1/contracts/token/ERC20/SafeERC20.sol";
+import "../openzeppelin-solidity/v2.5.1/contracts/utils/Address.sol";
+import "../openzeppelin-solidity/v2.5.1/contracts/math/SafeMath.sol";
+
+// import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+// import "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol";
+// import "@openzeppelin/contracts/token/ERC20/SafeERC20.sol";
+// import "@openzeppelin/contracts/utils/Address.sol";
+// import "@openzeppelin/contracts/math/SafeMath.sol";
 
 contract BIFI is ERC20, ERC20Detailed {
     using SafeERC20 for IERC20;
