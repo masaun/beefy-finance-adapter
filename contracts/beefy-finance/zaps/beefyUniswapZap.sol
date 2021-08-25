@@ -18,10 +18,15 @@ pragma solidity >=0.6.2;
 import "@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol";
 import "@uniswap/lib/contracts/libraries/Babylonian.sol";
 
-import "https://github.com/Uniswap/uniswap-v2-periphery/blob/master/contracts/interfaces/IUniswapV2Router02.sol";
+import "../uniswap-v2/uniswap-v2-periphery/interfaces/IUniswapV2Router02.sol";
+//import "https://github.com/Uniswap/uniswap-v2-periphery/blob/master/contracts/interfaces/IUniswapV2Router02.sol";
 
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v3.3.0/contracts/token/ERC20/SafeERC20.sol";
-import "https://github.com/Uniswap/uniswap-v3-core/blob/main/contracts/libraries/LowGasSafeMath.sol";
+import "@openzeppelin/contracts/token/ERC20/SafeERC20.sol";
+//import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v3.3.0/contracts/token/ERC20/SafeERC20.sol";
+
+import "../uniswap-v3/uniswap-v3-core/libraries/LowGasSafeMath.sol";
+
+//import "https://github.com/Uniswap/uniswap-v3-core/blob/main/contracts/libraries/LowGasSafeMath.sol";
 
 interface IWETH is IERC20 {
     function deposit() external payable;
