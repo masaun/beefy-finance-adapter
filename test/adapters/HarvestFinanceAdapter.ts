@@ -34,9 +34,9 @@ describe("Unit tests", function () {
     this.signers.usdtWhale = await hre.ethers.getSigner(USDT_WHALE);
 
     /// [Todo]: Specify artifacts of IERC.sol of @openzeppelin/contracts
-    const dai = await hre.ethers.getContractAt("IERC20", DAI_ADDRESS, this.signers.daiWhale);
+    const dai = await hre.ethers.getContractAt("IERC20V2", DAI_ADDRESS, this.signers.daiWhale);
     //const dai = await hre.ethers.getContractAt("IERC20", DAI_ADDRESS, this.signers.daiWhale);
-    const usdt = await hre.ethers.getContractAt("IERC20", USDT_ADDRESS, this.signers.usdtWhale);
+    const usdt = await hre.ethers.getContractAt("IERC20V2", USDT_ADDRESS, this.signers.usdtWhale);
     //const usdt = await hre.ethers.getContractAt("IERC20", USDT_ADDRESS, this.signers.usdtWhale);
 
     // deploy Harvest Finance Adapter
