@@ -1,4 +1,4 @@
-## 【Beefy.finance adapter for Opty-Fi】
+## 【Beefy.finance adapter for OptyFi】
 
 - This is the smart contract that build an integration with Beefy Finance’s liquidity pools on Polygon using OptyFi's DeFi Adapter interface.
 
