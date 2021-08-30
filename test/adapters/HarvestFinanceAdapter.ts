@@ -33,7 +33,8 @@ describe("Unit tests", function () {
     this.signers.daiWhale = await hre.ethers.getSigner(DAI_WHALE);
     this.signers.usdtWhale = await hre.ethers.getSigner(USDT_WHALE);
 
-    /// [Todo]: Specify artifacts of IERC.sol of @openzeppelin/contracts v2.5.1
+    /// [Note]: Specify "IERC20V2" (IERC20V2.sol) to avoid that duplicated-artifact name of IERC20.sol between @openzeppelin/contracts v2.5.1 and v3.4.0 are used.
+    /// [Note]: IERC20V2" (IERC20V2.sol) inherit @openzeppelin/contracts v2.5.1
     const dai = await hre.ethers.getContractAt("IERC20V2", DAI_ADDRESS, this.signers.daiWhale);
     //const dai = await hre.ethers.getContractAt("IERC20", DAI_ADDRESS, this.signers.daiWhale);
     const usdt = await hre.ethers.getContractAt("IERC20V2", USDT_ADDRESS, this.signers.usdtWhale);
