@@ -63,6 +63,7 @@ contract RewardPool is LPTokenWrapper, IRewardDistributionRecipient {
         emit Staked(msg.sender, amount);
     }
 
+    // stake visibility is public as overriding LPTokenWrapper's withdraw() function
     function withdraw(uint256 amount) public updateReward(msg.sender) {
         require(amount > 0, "Cannot withdraw 0");
         super.withdraw(amount);
