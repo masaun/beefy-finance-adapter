@@ -277,7 +277,7 @@ contract BeefyFinanceAdapter is IAdapter, IAdapterHarvestReward, IAdapterStaking
      * @inheritdoc IAdapter
      */
     function getPoolValue(address _liquidityPool, address) public view override returns (uint256) {
-        //return IHarvestDeposit(_liquidityPool).underlyingBalanceWithInvestment();
+        return IRewardPool(_liquidityPool).balanceOf(msg.sender);
     }
 
     /**

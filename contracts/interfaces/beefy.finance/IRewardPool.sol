@@ -18,13 +18,14 @@ interface IRewardPool {
     // @notice - stake visibility is public as overriding LPTokenWrapper's stake() function
     function stake(uint256 amount) external;
 
-    // @notice - stake visibility is public as overriding LPTokenWrapper's withdraw() function
+    // @notice - withdraw visibility is public as overriding LPTokenWrapper's withdraw() function
     function withdraw(uint256 amount) external;
 
     function exit() external;
 
     function getReward() external;
 
+    // @notice - notifyRewardAmount visibility is public as overriding IRewardDistributionRecipient's notifyRewardAmount() function
     function notifyRewardAmount(uint256 reward) external;
 
     //-------------------------------------------------------
@@ -33,9 +34,4 @@ interface IRewardPool {
     function totalSupply() external view returns (uint256);
 
     function balanceOf(address account) external view returns (uint256);
-
-    //----------------------------------------------------------------------
-    // Methods of the inherited-contract (IRewardDistributionRecipient.sol)
-    //----------------------------------------------------------------------
-    function notifyRewardAmount(uint256 reward) external;
 }
