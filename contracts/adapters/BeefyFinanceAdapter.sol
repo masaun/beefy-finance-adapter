@@ -4,10 +4,10 @@
 pragma solidity ^0.6.12;
 pragma experimental ABIEncoderV2;
 
-//  libraries
+// libraries
 import { SafeMath } from "@openzeppelin/contracts/math/SafeMath.sol";
 
-//  interfaces
+// interfaces
 import { IRewardPool } from "../interfaces/beefy.finance/IRewardPool.sol";
 import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import { IAdapter } from "../interfaces/opty/defiAdapters/IAdapter.sol";
@@ -199,11 +199,12 @@ contract BeefyFinanceAdapter is IAdapter, IAdapterHarvestReward, IAdapterStaking
         address _liquidityPool,
         uint256 _redeemAmount
     ) public view override returns (uint256 _amount) {
-        //     address _stakingVault = liquidityPoolToStakingVault[_liquidityPool];
-        //     uint256 _liquidityPoolTokenBalance = IHarvestFarm(_stakingVault).balanceOf(_vault);
-        //     uint256 _balanceInToken = getAllAmountInTokenStake(_vault, _underlyingToken, _liquidityPool);
-        //     // can have unintentional rounding errors
-        //     _amount = (_liquidityPoolTokenBalance.mul(_redeemAmount)).div(_balanceInToken).add(1);
+        address _stakingVault = liquidityPoolToStakingVault[_liquidityPool];
+        uint256 _liquidityPoolTokenBalance = IRewardPool(_stakingVault).balanceOf(_vault);
+        uint256 _balanceInToken = getAllAmountInTokenStake(_vault, _underlyingToken, _liquidityPool);
+
+        // can have unintentional rounding errors
+        _amount = (_liquidityPoolTokenBalance.mul(_redeemAmount)).div(_balanceInToken).add(1);
     }
 
     /**

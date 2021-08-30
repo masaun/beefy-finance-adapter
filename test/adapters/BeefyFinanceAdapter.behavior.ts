@@ -5,7 +5,7 @@ import { PoolItem } from "../types";
 chai.use(solidity);
 
 export function shouldBehaveLikeBeefyFinanceAdapter(token: string, pool: PoolItem): void {
-  it(`should deposit and withdraw ${token} in ${token} pool of Beefy.inance`, async function () {
+  it(`should deposit and withdraw ${token} in ${token} pool of Beefy.finance`, async function () {
     await this.testDeFiAdapter.testGetDepositAllCodes(pool.tokens[0], pool.pool, this.beefyFinanceAdapter.address);
     expect(
       await this.beefyFinanceAdapter.getLiquidityPoolTokenBalance(
