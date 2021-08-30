@@ -439,8 +439,8 @@ contract BeefyFinanceAdapter is IAdapter, IAdapterHarvestReward, IAdapterStaking
         override
         returns (uint256)
     {
-        //     address _stakingVault = liquidityPoolToStakingVault[_liquidityPool];
-        //     return IHarvestFarm(_stakingVault).balanceOf(_vault);
+        address _stakingVault = liquidityPoolToStakingVault[_liquidityPool];
+        return IRewardPool(_stakingVault).balanceOf(_vault);
     }
 
     /**
