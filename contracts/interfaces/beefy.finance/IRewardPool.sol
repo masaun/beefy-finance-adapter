@@ -13,7 +13,7 @@ interface IRewardPool {
 
     function rewardPerToken() external;
 
-    function earned(address account) external;
+    function earned(address account) external view returns (uint256);
 
     // @notice - stake visibility is public as overriding LPTokenWrapper's stake() function
     function stake(uint256 amount) external;
