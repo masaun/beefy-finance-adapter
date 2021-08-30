@@ -4,6 +4,7 @@ pragma solidity ^0.6.12;
 
 /**
  * @notice - Interface of the RewardPool.sol in the beefy.finance
+ * @notice - (As a remarks) the RewardPool.sol inherit the LPTokenWrapper
  */
 interface IRewardPool {
     function updateReward(address account) external;
@@ -32,4 +33,9 @@ interface IRewardPool {
     function totalSupply() external view returns (uint256);
 
     function balanceOf(address account) external view returns (uint256);
+
+    //----------------------------------------------------------------------
+    // Methods of the inherited-contract (IRewardDistributionRecipient.sol)
+    //----------------------------------------------------------------------
+    function notifyRewardAmount(uint256 reward) external;
 }
