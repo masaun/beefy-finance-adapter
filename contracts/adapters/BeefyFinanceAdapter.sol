@@ -418,16 +418,16 @@ contract BeefyFinanceAdapter is IAdapter, IAdapterHarvestReward, IAdapterStaking
         address _underlyingToken,
         address _liquidityPool
     ) public view override returns (uint256) {
-        //     address _stakingVault = liquidityPoolToStakingVault[_liquidityPool];
-        //     uint256 b = IHarvestFarm(_stakingVault).balanceOf(_vault);
-        //     if (b > 0) {
-        //         b = b.mul(IHarvestDeposit(_liquidityPool).getPricePerFullShare()).div(1e18);
-        //     }
-        //     uint256 _unclaimedReward = getUnclaimedRewardTokenAmount(_vault, _liquidityPool, _underlyingToken);
-        //     if (_unclaimedReward > 0) {
-        //         b = b.add(_getRewardBalanceInUnderlyingTokens(rewardToken, _underlyingToken, _unclaimedReward));
-        //     }
-        //     return b;
+        address _stakingVault = liquidityPoolToStakingVault[_liquidityPool];
+        uint256 b = IRewardPool(_stakingVault).balanceOf(_vault);
+        if (b > 0) {
+            //b = b.mul(IHarvestDeposit(_liquidityPool).getPricePerFullShare()).div(1e18);
+        }
+        uint256 _unclaimedReward = getUnclaimedRewardTokenAmount(_vault, _liquidityPool, _underlyingToken);
+        if (_unclaimedReward > 0) {
+            b = b.add(_getRewardBalanceInUnderlyingTokens(rewardToken, _underlyingToken, _unclaimedReward));
+        }
+        return b;
     }
 
     /**
