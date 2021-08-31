@@ -1,7 +1,7 @@
 pragma solidity ^0.5.0;
 
-import "../openzeppelin-solidity/v2.5.1/contracts/math/Math.sol";
-import "../openzeppelin-solidity/v2.5.1/contracts/token/ERC20/IERC20.sol";
+import { Math } from "../openzeppelin-solidity/v2.5.1/contracts/math/Math.sol";
+import { IERC20 } from "../openzeppelin-solidity/v2.5.1/contracts/token/ERC20/IERC20.sol";
 // import "@openzeppelin/contracts/math/Math.sol";
 // import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
@@ -10,7 +10,8 @@ import "./LPTokenWrapper.sol";
 
 contract RewardPool is LPTokenWrapper, IRewardDistributionRecipient {
     // @notice - Token address of the BIFI Governance Token will be assigned as an argument value of IERC20() below.
-    IERC20 public yfi = IERC20(0x0000000000000000000000000000000000000000);
+    IERC20 public yfi = IERC20(0xFbdd194376de19a88118e84E279b977f165d01b8); // [Note]: BIFI token address on Polygon mainnet
+    //IERC20 public yfi = IERC20(0x0000000000000000000000000000000000000000);
 
     uint256 public constant DURATION = 60 days;
 
