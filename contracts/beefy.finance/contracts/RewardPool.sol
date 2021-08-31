@@ -9,7 +9,9 @@ import "./IRewardDistributionRecipient.sol";
 import "./LPTokenWrapper.sol";
 
 contract RewardPool is LPTokenWrapper, IRewardDistributionRecipient {
+    // @notice - Token address of the BIFI Governance Token will be assigned as an argument value of IERC20() below.
     IERC20 public yfi = IERC20(0x0000000000000000000000000000000000000000);
+
     uint256 public constant DURATION = 60 days;
 
     uint256 public periodFinish = 0;

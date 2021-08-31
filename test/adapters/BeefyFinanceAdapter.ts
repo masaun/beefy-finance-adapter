@@ -36,7 +36,7 @@ describe("Unit tests of the BeefyFinanceAdapter", function () {
     this.signers.daiWhale = await hre.ethers.getSigner(DAI_WHALE);
     this.signers.usdtWhale = await hre.ethers.getSigner(USDT_WHALE);
 
-    /// [Note]: Specify "IERC20V2" (IERC20V2.sol) to avoid that duplicated-artifact name of IERC20.sol between @openzeppelin/contracts v2.5.1 and v3.4.0 are used.
+    /// [Note]: Specify "IERC20V2" (IERC20V2.sol) as artifact in order to avoid that duplicated-artifact name of IERC20.sol between @openzeppelin/contracts v2.5.1 and v3.4.0 are used.
     /// [Note]: IERC20V2" (IERC20V2.sol) inherit @openzeppelin/contracts v2.5.1
     const dai = await hre.ethers.getContractAt("IERC20V2", DAI_ADDRESS, this.signers.daiWhale);
     //const dai = await hre.ethers.getContractAt("IERC20", DAI_ADDRESS, this.signers.daiWhale)
