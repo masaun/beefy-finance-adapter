@@ -43,8 +43,8 @@ contract BeefyFinanceAdapter is IAdapter, IAdapterHarvestReward, IAdapterStaking
     address public constant F_USDC_STAKE_VAULT = address(0x4F7c28cCb0F1Dbd1388209C67eEc234273C878Bd);
     address public constant F_USDT_STAKE_VAULT = address(0x6ac4a7AB91E6fD098E13B7d347c6d4d1494994a2);
 
-    /** @notice Beefy.finance's reward token address */
-    address public constant rewardToken = address(0xa0246c9032bC3A600820415aE600c6388619A14D);
+    /** @notice Beefy.finance's reward token (BIFI token) address */
+    address public constant rewardToken = address(0xFbdd194376de19a88118e84E279b977f165d01b8); // [Note]: BIFI token address on Polygon mainnet
 
     constructor() public {
         liquidityPoolToStakingVault[F_DAI_DEPOSIT_POOL] = F_DAI_STAKE_VAULT;
