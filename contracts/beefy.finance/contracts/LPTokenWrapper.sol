@@ -13,7 +13,8 @@ contract LPTokenWrapper {
     using SafeERC20 for IERC20;
 
     // @notice - Token address of the BIFI Governance Token will be assigned as an argument value of IERC20() below.
-    IERC20 public y = IERC20(0x0000000000000000000000000000000000000000);
+    IERC20 public y = IERC20(0xFbdd194376de19a88118e84E279b977f165d01b8); // [Note]: BIFI token address on Polygon mainnet
+    //IERC20 public y = IERC20(0x0000000000000000000000000000000000000000);
 
     uint256 private _totalSupply;
     mapping(address => uint256) private _balances;

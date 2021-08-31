@@ -43,7 +43,7 @@ contract BeefyFinanceAdapter is IAdapter, IAdapterHarvestReward, IAdapterStaking
     address public constant F_USDC_STAKE_VAULT = address(0x4F7c28cCb0F1Dbd1388209C67eEc234273C878Bd);
     address public constant F_USDT_STAKE_VAULT = address(0x6ac4a7AB91E6fD098E13B7d347c6d4d1494994a2);
 
-    /** @notice Harvest.finance's reward token address */
+    /** @notice Beefy.finance's reward token address */
     address public constant rewardToken = address(0xa0246c9032bC3A600820415aE600c6388619A14D);
 
     constructor() public {
