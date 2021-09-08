@@ -6,13 +6,17 @@
 
 <br>
 
-## 【Workflow】
+## 【Implemented-files】
+
+- Smart contracts
+  - ./contracts/adapters/BeefyFinanceAdapter.sol: https://github.com/masaun/beefy-finance-adapter/blob/main/contracts/adapters/BeefyFinanceAdapter.sol
+  - ./contracts/beefy.finance/: https://github.com/masaun/beefy-finance-adapter/tree/main/contracts/beefy.finance
 
 <br>
 
-## 【Implemented-files】
-
--
+- Unit tests
+  - ./test/adapters/BeefyFinanceAdapter.behavior.ts: https://github.com/masaun/beefy-finance-adapter/blob/main/test/adapters/BeefyFinanceAdapter.behavior.ts
+  - ./test/adapters/BeefyFinanceAdapter.ts: https://github.com/masaun/beefy-finance-adapter/blob/main/test/adapters/BeefyFinanceAdapter.ts
 
 <br>
 
