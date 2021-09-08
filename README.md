@@ -32,7 +32,7 @@
 
 ## 【Setup】
 
-- 1. Install
+- ① Install
 
 ```
 yarn install
@@ -40,7 +40,7 @@ yarn install
 
 <br>
 
-- 2. Compile the smart contracts with Hardhat
+- ② Compile the smart contracts with Hardhat
 
 ```
 yarn compile
@@ -48,7 +48,7 @@ yarn compile
 
 <br>
 
-- 3. Compile the smart contracts and generate TypeChain artifacts
+- ③ Compile the smart contracts and generate TypeChain artifacts
 
 ```
 yarn typechain
@@ -68,7 +68,7 @@ yarn test
 
 ## 【Demo】
 
-- Demo video of unit test
+- Demo video of unit test:
   https://youtu.be/0rhAdGg2JuY
 
 <br>
