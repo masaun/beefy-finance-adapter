@@ -1,6 +1,52 @@
-## 【Beefy.finance adapter for OptyFi】
+# Beefy.finance adapter for OptyFi
+
+## 【Introduction of the Beefy.finance adapter for OptyFi】
 
 - This is the smart contract that build an integration with Beefy Finance’s liquidity pools on Polygon using OptyFi's DeFi Adapter interface.
+
+<br>
+
+## 【Workflow】
+
+<br>
+
+## 【Implemented-files】
+
+-
+
+<br>
+
+## 【Remarks】
+
+<br>
+
+## 【Installation】
+
+<br>
+
+## 【Unit test】
+
+- Unit test
+
+```
+yarn test
+```
+
+<br>
+
+## 【Reference】
+
+- Opty.fi
+  - DeFi Adapter Kit: https://github.com/Opty-Fi/defi-adapter-kit
+  - Doc: https://docs.opty.fi/intro/how-optyfi-works
+  - Website: https://opty.fi/
+
+<br>
+
+- Beefy.finance
+  - Smart contract: https://github.com/beefyfinance/beefy-protocol
+  - Doc: https://docs.beefy.finance/beefyfinance/
+  - dApp: https://www.beefy.finance/
 
 <br>
 
