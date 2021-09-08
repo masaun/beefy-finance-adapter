@@ -2,7 +2,7 @@
 
 ## 【Introduction of the Beefy.finance adapter for OptyFi】
 
-- This is the smart contract that build an integration with Beefy Finance’s liquidity pools on Polygon using OptyFi's DeFi Adapter interface.
+- This is the smart contract that build an integration with the `Beefy Finance` ’s liquidity pools on Polygon using ``OptyFi's DeFi Adapter interface` .
 
 <br>
 
@@ -22,19 +22,53 @@
 
 ## 【Remarks】
 
+- Versions:
+  - Solidity (Solc): v0.6.12
+  - Hardhat: v2.5.0
+  - ether.js: v5.4.4
+  - @openzeppelin/contracts: v2.5.1 and v3.4.0 (Both version are used in this repo)
+
 <br>
 
-## 【Installation】
+## 【Setup】
+
+- 1. Install
+
+```
+yarn install
+```
+
+<br>
+
+- 2. Compile the smart contracts with Hardhat
+
+```
+yarn compile
+```
+
+<br>
+
+- 3. Compile the smart contracts and generate TypeChain artifacts
+
+```
+yarn typechain
+```
 
 <br>
 
 ## 【Unit test】
 
-- Unit test
+- Unit tests of the `BeefyFinanceAdapter`
 
 ```
 yarn test
 ```
+
+<br>
+
+## 【Demo】
+
+- Demo video of unit test
 
 <br>
 
